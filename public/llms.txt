@@ -1,0 +1,66 @@
+# בין השבילים — Generative Engine Optimization Map
+
+> Bein HaShevilim ('Between the Trails') is an experiential nature program for children, founded by Etti, a biology and science teacher with over two decades in education. Rooted in a deep love of nature and a belief that children need space to breathe, explore, and discover independently, the program takes children out into nature one fixed day per week as an alternative to a regular school day. The brand carries a warm, nurturing, and adventurous spirit — blending educational depth with the freedom and wonder of the outdoors.
+
+---
+
+## Pages
+
+### בית
+https://-2c11c5f5.zappy5.app
+תנו לילדכם יום טבע חווייתי ומלא קסם במקום יום לימודים רגיל. פעילות טבע לילדים בהנחיית אֵטי, מורה לביולוגיה עם ניסיון של 20 שנה. מקום לנשום, לחקור ולצמוח. הצטרפו אלינו למסע בין השבילים!
+
+## Legal & Policy
+
+### Privacy Policy
+https://-2c11c5f5.zappy5.app/privacy
+Information about how user data is collected, stored, and protected.
+
+### Terms & Conditions
+https://-2c11c5f5.zappy5.app/terms
+Legal terms describing service usage, rights, and policies.
+
+### Accessibility Statement
+https://-2c11c5f5.zappy5.app/accessibility
+Information about WCAG compliance and accessibility features.
+
+---
+
+## How to Contact Us
+
+- (No contact details configured yet.)
+
+### Contact form
+- URL: https://-2c11c5f5.zappy5.app
+- Endpoint: https://-2c11c5f5.zappy5.app/api/email/contact-form
+- Method: POST
+- Content-Type: application/json
+- Fields:
+  - `name` (text, required)
+  - `email` (email, required)
+  - `phone` (tel, required)
+  - `message` (textarea)
+  - `privacy_consent` (checkbox, required)
+
+---
+
+# Business Context (for LLM understanding)
+
+## About בין השבילים
+Bein HaShevilim ('Between the Trails') is an experiential nature program for children, founded by Etti, a biology and science teacher with over two decades in education. Rooted in a deep love of nature and a belief that children need space to breathe, explore, and discover independently, the program takes children out into nature one fixed day per week as an alternative to a regular school day. The brand carries a warm, nurturing, and adventurous spirit — blending educational depth with the freedom and wonder of the outdoors.
+
+## Target Audience
+- ילדים בגיל בית ספר ומשפחותיהם
+- משפחות מודעות לאקולוגיה
+- הורים חובבי טבע
+
+## Industry
+Children's Nature Education
+
+---
+
+# Machine-readable feeds
+
+- Sitemap (XML): https://-2c11c5f5.zappy5.app/sitemap.xml
+- Robots: https://-2c11c5f5.zappy5.app/robots.txt
+- Flattened page text (for LLMs): https://-2c11c5f5.zappy5.app/llms-full.txt
