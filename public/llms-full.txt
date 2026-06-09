@@ -2,13 +2,13 @@
 
 Bein HaShevilim ('Between the Trails') is an experiential nature program for children, founded by Etti, a biology and science teacher with over two decades in education. Rooted in a deep love of nature and a belief that children need space to breathe, explore, and discover independently, the program takes children out into nature one fixed day per week as an alternative to a regular school day. The brand carries a warm, nurturing, and adventurous spirit — blending educational depth with the freedom and wonder of the outdoors.
 
-Source: https://-2c11c5f5.zappy5.app
+Source: https://example.com
 
 ---
 
 ## גלו את קסם הטבע עם הילדים — בין השבילים
 
-URL: https://-2c11c5f5.zappy5.app
+URL: https://example.com
 Description: תנו לילדכם יום טבע חווייתי ומלא קסם במקום יום לימודים רגיל. פעילות טבע לילדים בהנחיית אֵטי, מורה לביולוגיה עם ניסיון של 20 שנה. מקום לנשום, לחקור ולצמוח. הצטרפו אלינו למסע בין השבילים!
 
 גלו את קסם הטבע עם הילדים — בין השבילים
@@ -528,7 +528,7 @@ Description: תנו לילדכם יום טבע חווייתי ומלא קסם ב
 
 ## מדיניות פרטיות
 
-URL: https://-2c11c5f5.zappy5.app/privacy
+URL: https://example.com/privacy
 Description: מדיניות הפרטיות שלנו - כיצד אנו אוספים, משתמשים ומגנים על המידע שלכם
 
 מדיניות פרטיות
@@ -798,7 +798,7 @@ Description: מדיניות הפרטיות שלנו - כיצד אנו אוספי
 
 ## הצהרת נגישות
 
-URL: https://-2c11c5f5.zappy5.app/accessibility
+URL: https://example.com/accessibility
 Description: הצהרת הנגישות שלנו - מחויבותנו לנגישות דיגיטלית
 
 הצהרת נגישות
@@ -1077,7 +1077,7 @@ Description: הצהרת הנגישות שלנו - מחויבותנו לנגיש�
 
 ## תנאי שימוש
 
-URL: https://-2c11c5f5.zappy5.app/terms
+URL: https://example.com/terms
 Description: תנאי השימוש באתר - הזכויות והחובות של המשתמשים
 
 תנאי שימוש
