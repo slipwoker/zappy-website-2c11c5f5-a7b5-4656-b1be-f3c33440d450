@@ -28,7 +28,10 @@ Information about WCAG compliance and accessibility features.
 
 ## How to Contact Us
 
-- (No contact details configured yet.)
+- Email: aviveti@gmail.com
+- Phone: +972525448536
+- Phone (tel): tel:+972525448536
+- Address: פרדס חנה-כרכור, ישראל
 
 ### Contact form
 - URL: https://example.com
