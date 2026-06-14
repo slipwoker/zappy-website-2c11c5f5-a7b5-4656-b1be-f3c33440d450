@@ -1439,6 +1439,35 @@ document.querySelector('.team-about__cta')?.addEventListener('click', function(e
   }
 });
 
+/* Added Component Script */
+// Optional: Add subtle intersection observer animation for cards
+document.addEventListener('DOMContentLoaded', function() {
+  const cards = document.querySelectorAll('.edu-nature-card');
+  
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, { threshold: 0.15 });
+
+    cards.forEach(card => {
+      card.style.opacity = '0';
+      card.style.transform = 'translateY(20px)';
+      card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+      observer.observe(card);
+    });
+  } else {
+    // Fallback for browsers without IntersectionObserver
+    cards.forEach(card => {
+      card.style.opacity = '1';
+    });
+  }
+});
+
 
 /* ZAPPY_PUBLISHED_LIGHTBOX_RUNTIME */
 (function(){

@@ -5775,6 +5775,190 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
     bottom: -14px;
   }
 }
+
+/* Added Component Styles */
+.edu-nature-section {
+  background-color: #f9faf7;
+  padding: 80px 24px;
+  direction: rtl;
+  font-family: system-ui, sans-serif;
+}
+
+.edu-nature-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Header */
+.edu-nature-header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.edu-nature-logo-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 28px;
+}
+
+.edu-nature-logo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  background-color: rgba(111, 125, 69, 0.08);
+  padding: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.edu-nature-logo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 16px rgba(111, 125, 69, 0.2);
+}
+
+.edu-nature-main-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2c3a1f;
+  margin: 0 0 12px 0;
+  line-height: 1.3;
+  letter-spacing: -0.5px;
+}
+
+.edu-nature-subtitle {
+  font-size: 1.2rem;
+  color: #5a6b42;
+  margin: 0;
+  font-weight: 400;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+/* Cards Grid */
+.edu-nature-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+/* Individual Card */
+.edu-nature-card {
+  background: #ffffff;
+  border-radius: 20px;
+  border: 1px solid rgba(111, 125, 69, 0.18);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.04);
+  padding: 40px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.edu-nature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 36px rgba(111, 125, 69, 0.12);
+  border-color: rgba(111, 125, 69, 0.35);
+}
+
+.edu-nature-card-icon {
+  margin-bottom: 24px;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(111, 125, 69, 0.06);
+  border-radius: 50%;
+  padding: 16px;
+}
+
+.edu-nature-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  max-width: 100%;
+  height: auto;
+}
+
+.edu-nature-card-content {
+  flex: 1;
+}
+
+.edu-nature-card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2c3a1f;
+  margin: 0 0 16px 0;
+  line-height: 1.35;
+}
+
+.edu-nature-card-text {
+  font-size: 1.05rem;
+  color: #4a5a38;
+  line-height: 1.75;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .edu-nature-section {
+    padding: 56px 20px;
+  }
+
+  .edu-nature-cards {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .edu-nature-main-title {
+    font-size: 2rem;
+  }
+
+  .edu-nature-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .edu-nature-card {
+    padding: 32px 24px;
+  }
+
+  .edu-nature-card-title {
+    font-size: 1.35rem;
+  }
+
+  .edu-nature-card-text {
+    font-size: 1rem;
+  }
+
+  .edu-nature-logo {
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .edu-nature-section {
+    padding: 40px 16px;
+  }
+
+  .edu-nature-main-title {
+    font-size: 1.7rem;
+  }
+
+  .edu-nature-card {
+    padding: 24px 18px;
+  }
+
+  .edu-nature-card-title {
+    font-size: 1.25rem;
+  }
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
