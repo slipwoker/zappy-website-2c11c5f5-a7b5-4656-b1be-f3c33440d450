@@ -161,26 +161,31 @@
       // Track button clicks (counted as actions)
       if (target.tagName === 'BUTTON' || target.closest('button')) {
         var button = target.tagName === 'BUTTON' ? target : target.closest('button');
-        trackEvent('click', {
+        var clickMeta = {
           element: 'button',
           text: button.textContent.trim().substring(0, 100),
           id: button.id || null,
           class: button.className || null
-        });
+        };
+        
+        trackEvent('click', clickMeta);
       }
       
       // Track link clicks (navigation - not counted as actions)
       else if (target.tagName === 'A' || target.closest('a')) {
         var link = target.tagName === 'A' ? target : target.closest('a');
-        trackEvent('navigation', {
+        var navMeta = {
           element: 'link',
           text: link.textContent.trim().substring(0, 100),
           href: link.href,
           external: link.hostname !== window.location.hostname
-        });
+        };
+        
+        trackEvent('navigation', navMeta);
       }
     }, true);
   }
+  
   
   // Track form submissions
   if (config.trackFormSubmissions) {
@@ -223,6 +228,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="גלו את קסם הטבע עם הילדים — בין השבילים">
     <meta name="twitter:description" content="תנו לילדכם יום טבע חווייתי ומלא קסם במקום יום לימודים רגיל. פעילות טבע לילדים בהנחיית אֵטי, מורה לביולוגיה עם ניסיון של 20 שנה. מקום לנשום, לחקור ולצמוח. הצטרפו אלינו למסע בין השבילים!">
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"LocalBusiness","@id":"https://beinhashvilim.zappy5.app#organization","name":"בין השבילים","url":"https://beinhashvilim.zappy5.app","description":"Bein HaShevilim ('Between the Trails') is an experiential nature program for children, founded by Etti, a biology and science teacher with over two decades in education. Rooted in a deep love of nature and a belief that children need space to breathe, explore, and discover independently, the program takes children out into nature one fixed day per week as an alternative to a regular school day. The brand carries a warm, nurturing, and adventurous spirit — blending educational depth with the freedom and wonder of the outdoors.","address":{"@type":"PostalAddress","streetAddress":"פרדס חנה-כרכור, ישראל"},"contactPoint":[{"@type":"ContactPoint","contactType":"customer service","email":"aviveti@gmail.com","telephone":"+972525448536"}]},{"@type":"WebSite","@id":"https://beinhashvilim.zappy5.app#website","url":"https://beinhashvilim.zappy5.app","name":"בין השבילים","publisher":{"@id":"https://beinhashvilim.zappy5.app#organization"}},{"@type":"ContactPage","@id":"https://beinhashvilim.zappy5.app#contactpage","url":"https://beinhashvilim.zappy5.app","name":"גלו את קסם הטבע עם הילדים — בין השבילים","mainEntity":{"@id":"https://beinhashvilim.zappy5.app#organization"},"potentialAction":{"@type":"CommunicateAction","target":{"@type":"EntryPoint","urlTemplate":"https://beinhashvilim.zappy5.app/api/email/contact-form","actionPlatform":["http/method=POST"],"contentType":"application/json"},"instrument":[{"@type":"PropertyValue","name":"name","propertyID":"text","valueRequired":true,"description":"השם שלך"},{"@type":"PropertyValue","name":"email","propertyID":"email","valueRequired":true,"description":"aviveti@gmail.com"},{"@type":"PropertyValue","name":"phone","propertyID":"tel","valueRequired":true,"description":"+972525448536"},{"@type":"PropertyValue","name":"message","propertyID":"textarea","valueRequired":false,"description":"אשמח לשמוע עוד על..."},{"@type":"PropertyValue","name":"privacy_consent","propertyID":"checkbox","valueRequired":true}]}}]}</script>
     <meta property="og:type" content="website">
   <meta property="og:locale" content="he_IL">
   
@@ -828,7 +834,7 @@
       <h3 class="hero-subtitle" style="">במקום עוד יום בכיתה, הילדים יוצאים אל הטבע ליום של נשימה, סקרנות וגילוי עצמאי.</h3>
       <p class="hero-support-line" style="color: rgb(47, 42, 36) !important;">שתי תכניות לבחירתכם -&nbsp;<br>התכנית המלאה -&nbsp;הפעילות מתקיימת ביום קבוע אחת לשבוע, לאורך כל השנה.<br><br>התכנית המקוצרת -&nbsp;הפעילות מתקיימת ביום קבוע אחת לשבועיים, לאורך כל השנה.&nbsp;</p>
       <div class="hero-ctas">
-        <a href="#contact" class="btn-primary" style="color: rgb(0, 0, 0) !important;" data-element-type="button" data-element-id="btn-1781012835921-n2ev2tfqh" data-native-element="true">השאירו פרטים ונתאם שיחה</a>
+        <a href="#hero" class="btn btn-primary" style="color: rgb(255, 255, 255) !important; outline: none; border-color: rgb(201, 110, 75) !important; background-color: rgb(201, 110, 75) !important; background-image: none !important;" data-element-type="button" data-element-id="btn-1781012835921-n2ev2tfqh" data-native-element="true">השאירו פרטים ונתאם שיחה</a>
         <a href="#about" class="btn-secondary" style="color: rgb(47, 42, 36) !important;" data-element-type="button" data-element-id="btn-1781012835921-oi602mrgq" data-native-element="true">איך נראה יום בתוכנית?</a>
       </div>
     </div>
@@ -1105,7 +1111,7 @@
         <div class="privacy-consent">
           <label class="privacy-consent-label">
             <input type="checkbox" name="privacy_consent" class="privacy-consent-checkbox" required="">
-            <span>קראתי ואני מסכים/ה ל<a href="#hero" style="color: rgb(47, 42, 36) !important; outline: none; border-color: transparent !important; background-color: transparent !important; background-image: none !important;" class="btn btn-ghost" data-native-element="true" data-element-id="btn-1781018096194-klgzszml1" data-element-type="button">תנאי השימוש</a> ול<a href="/privacy" style="color: rgb(47, 42, 36) !important; outline: none; background-color: transparent !important; background-image: none !important; border-color: transparent !important;" class="btn btn-ghost" data-native-element="true" data-element-id="btn-1781018081162-rg5oj2ol4" data-element-type="button">מדיניות הפרטיות</a></span>
+            <span>קראתי ואני מסכים/ה ל<a href="#hero" style="color: rgb(47, 42, 36) !important; outline: none; border-color: transparent !important; background-color: transparent !important; background-image: none !important;" class="btn btn-ghost" data-native-element="true" data-element-id="btn-1781018096194-klgzszml1" data-element-type="button">תנאי השימוש</a> ול<a href="#hero" style="outline: none; color: rgb(47, 42, 36) !important; border-color: transparent !important; background-color: transparent !important; background-image: none !important;" class="btn btn-ghost" data-native-element="true" data-element-id="btn-1781018081162-rg5oj2ol4" data-element-type="button">מדיניות הפרטיות</a></span>
           </label>
         </div>
 
