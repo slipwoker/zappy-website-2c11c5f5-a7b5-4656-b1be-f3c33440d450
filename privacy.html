@@ -161,26 +161,31 @@
       // Track button clicks (counted as actions)
       if (target.tagName === 'BUTTON' || target.closest('button')) {
         var button = target.tagName === 'BUTTON' ? target : target.closest('button');
-        trackEvent('click', {
+        var clickMeta = {
           element: 'button',
           text: button.textContent.trim().substring(0, 100),
           id: button.id || null,
           class: button.className || null
-        });
+        };
+        
+        trackEvent('click', clickMeta);
       }
       
       // Track link clicks (navigation - not counted as actions)
       else if (target.tagName === 'A' || target.closest('a')) {
         var link = target.tagName === 'A' ? target : target.closest('a');
-        trackEvent('navigation', {
+        var navMeta = {
           element: 'link',
           text: link.textContent.trim().substring(0, 100),
           href: link.href,
           external: link.hostname !== window.location.hostname
-        });
+        };
+        
+        trackEvent('navigation', navMeta);
       }
     }, true);
   }
+  
   
   // Track form submissions
   if (config.trackFormSubmissions) {
@@ -223,6 +228,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="מדיניות פרטיות">
     <meta name="twitter:description" content="מדיניות הפרטיות שלנו - כיצד אנו אוספים, משתמשים ומגנים על המידע שלכם">
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"LocalBusiness","@id":"https://beinhashvilim.zappy5.app#organization","name":"בין השבילים","url":"https://beinhashvilim.zappy5.app","description":"Bein HaShevilim ('Between the Trails') is an experiential nature program for children, founded by Etti, a biology and science teacher with over two decades in education. Rooted in a deep love of nature and a belief that children need space to breathe, explore, and discover independently, the program takes children out into nature one fixed day per week as an alternative to a regular school day. The brand carries a warm, nurturing, and adventurous spirit — blending educational depth with the freedom and wonder of the outdoors.","address":{"@type":"PostalAddress","streetAddress":"פרדס חנה-כרכור, ישראל"},"contactPoint":[{"@type":"ContactPoint","contactType":"customer service","email":"aviveti@gmail.com","telephone":"+972525448536"}]},{"@type":"WebSite","@id":"https://beinhashvilim.zappy5.app#website","url":"https://beinhashvilim.zappy5.app","name":"בין השבילים","publisher":{"@id":"https://beinhashvilim.zappy5.app#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://beinhashvilim.zappy5.app"},{"@type":"ListItem","position":2,"name":"Privacy","item":"https://beinhashvilim.zappy5.app/privacy"}]}]}</script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
     
@@ -351,7 +357,7 @@
   <div class="nav-container">
     <div class="nav-right-group"><div class="nav-brand">
       <a href="/" class="logo-link"><img class="logo" src="/assets/children-s-nature-education-logo-1781015435401-4ypwk7.webp?v=1781015436070-trlsy3" alt="בין השבילים"></a>
-    </div><ul class="nav-menu" id="navMenu"><li><a href="/#features">תכונות</a></li><li><a href="/#about">אודות</a></li><li><a href="/#gallery">גלריה</a></li><li><a href="/#stats">נתונים</a></li></ul></div>
+    </div><ul class="nav-menu" id="navMenu"><li><a href="/#features">תכונות</a></li><li><a href="/#gallery">גלריה</a></li><li><a href="/#stats">נתונים</a></li></ul></div>
     
     
     
