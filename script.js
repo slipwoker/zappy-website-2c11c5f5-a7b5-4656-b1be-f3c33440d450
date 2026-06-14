@@ -1427,6 +1427,18 @@ window.onload = function() {
 // No JavaScript required for this static section.
 // Add interactivity here if needed in the future (e.g., scroll animations).
 
+/* Added Component Script */
+// Optional: smooth scroll for CTA link
+document.querySelector('.team-about__cta')?.addEventListener('click', function(e) {
+  if (this.getAttribute('href')?.startsWith('#')) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+});
+
 
 /* ZAPPY_PUBLISHED_LIGHTBOX_RUNTIME */
 (function(){
