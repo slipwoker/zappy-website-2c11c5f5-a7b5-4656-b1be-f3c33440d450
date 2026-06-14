@@ -1423,6 +1423,11 @@ window.onload = function() {
 })();
 
 
+/* Added Component Script */
+// No JavaScript required for this static section.
+// Add interactivity here if needed in the future (e.g., scroll animations).
+
+
 /* ZAPPY_PUBLISHED_LIGHTBOX_RUNTIME */
 (function(){
   try {
