@@ -1423,52 +1423,6 @@ window.onload = function() {
 })();
 
 
-/* Added Component Script */
-// No JavaScript required for this static section.
-// Add interactivity here if needed in the future (e.g., scroll animations).
-
-/* Added Component Script */
-// Optional: smooth scroll for CTA link
-document.querySelector('.team-about__cta')?.addEventListener('click', function(e) {
-  if (this.getAttribute('href')?.startsWith('#')) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute('href'));
-    if (target) {
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-  }
-});
-
-/* Added Component Script */
-// Optional: Add subtle intersection observer animation for cards
-document.addEventListener('DOMContentLoaded', function() {
-  const cards = document.querySelectorAll('.edu-nature-card');
-  
-  if ('IntersectionObserver' in window) {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.style.opacity = '1';
-          entry.target.style.transform = 'translateY(0)';
-        }
-      });
-    }, { threshold: 0.15 });
-
-    cards.forEach(card => {
-      card.style.opacity = '0';
-      card.style.transform = 'translateY(20px)';
-      card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-      observer.observe(card);
-    });
-  } else {
-    // Fallback for browsers without IntersectionObserver
-    cards.forEach(card => {
-      card.style.opacity = '1';
-    });
-  }
-});
-
-
 /* ZAPPY_PUBLISHED_LIGHTBOX_RUNTIME */
 (function(){
   try {
