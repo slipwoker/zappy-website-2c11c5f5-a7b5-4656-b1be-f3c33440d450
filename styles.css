@@ -4752,6 +4752,563 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
     margin-bottom: 36px;
   }
 }
+
+/* AI-generated section */
+.program-elementary {
+  background: #F2E8DB;
+  padding: 80px 20px;
+  direction: rtl;
+  font-family: system-ui, sans-serif;
+}
+
+.program-elementary__container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.program-elementary__header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.program-elementary__badge {
+  display: inline-block;
+  background: #C96E4B;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 6px 18px;
+  border-radius: 50px;
+  margin-bottom: 16px;
+  letter-spacing: 0.5px;
+}
+
+.program-elementary__title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #3A3A2E;
+  margin: 0 0 16px;
+  line-height: 1.25;
+}
+
+.program-elementary__subtitle {
+  font-size: 1.15rem;
+  color: #5A5A48;
+  max-width: 680px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* Cards Grid */
+.program-elementary__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 56px;
+}
+
+.program-card {
+  background: #fff;
+  border: 1px solid rgba(111, 125, 69, 0.2);
+  border-radius: 14px;
+  padding: 28px 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.program-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  border-color: rgba(111, 125, 69, 0.45);
+}
+
+.program-card__icon {
+  width: 48px;
+  height: 48px;
+  background: rgba(111, 125, 69, 0.12);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  color: #6F7D45;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+.program-card:hover .program-card__icon {
+  background: #6F7D45;
+  color: #fff;
+}
+
+.program-card__icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.program-card__title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #3A3A2E;
+  margin: 0 0 10px;
+}
+
+.program-card__text {
+  font-size: 0.95rem;
+  color: #5A5A48;
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* Instructor Section */
+.program-elementary__instructor {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  background: #fff;
+  border: 1px solid rgba(111, 125, 69, 0.2);
+  border-radius: 18px;
+  padding: 36px;
+  margin-bottom: 48px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+.program-elementary__instructor-image {
+  flex-shrink: 0;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #C96E4B;
+}
+
+.program-elementary__instructor-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.program-elementary__instructor-info {
+  flex: 1;
+}
+
+.program-elementary__instructor-label {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #C96E4B;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.program-elementary__instructor-name {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #3A3A2E;
+  margin: 0 0 6px;
+}
+
+.program-elementary__instructor-role {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #6F7D45;
+  margin: 0 0 12px;
+}
+
+.program-elementary__instructor-desc {
+  font-size: 0.98rem;
+  color: #5A5A48;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* CTA Buttons */
+.program-elementary__cta {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.program-elementary__btn {
+  display: inline-block;
+  padding: 14px 32px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  cursor: pointer;
+  border: 2px solid transparent;
+  text-align: center;
+}
+
+.program-elementary__btn--primary {
+  background: #6F7D45;
+  color: #fff;
+  border-color: #6F7D45;
+}
+
+.program-elementary__btn--primary:hover,
+.program-elementary__btn--primary:focus-visible {
+  background: #5D6A38;
+  border-color: #5D6A38;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(111, 125, 69, 0.35);
+  outline: none;
+}
+
+.program-elementary__btn--secondary {
+  background: transparent;
+  color: #6F7D45;
+  border-color: #6F7D45;
+}
+
+.program-elementary__btn--secondary:hover,
+.program-elementary__btn--secondary:focus-visible {
+  background: rgba(111, 125, 69, 0.08);
+  transform: translateY(-2px);
+  outline: none;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .program-elementary__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+
+  .program-elementary__title {
+    font-size: 2rem;
+  }
+
+  .program-elementary__instructor {
+    flex-direction: column;
+    text-align: center;
+    gap: 24px;
+    padding: 28px 20px;
+  }
+
+  .program-elementary__instructor-image {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+@media (max-width: 560px) {
+  .program-elementary {
+    padding: 56px 16px;
+  }
+
+  .program-elementary__title {
+    font-size: 1.7rem;
+  }
+
+  .program-elementary__subtitle {
+    font-size: 1rem;
+  }
+
+  .program-elementary__grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .program-card {
+    padding: 22px 18px;
+  }
+
+  .program-elementary__btn {
+    width: 100%;
+    padding: 14px 20px;
+  }
+
+  .program-elementary__cta {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+/* AI-generated section */
+.program-youth {
+  background: #F2E8DB;
+  padding: 90px 20px;
+  font-family: system-ui, sans-serif;
+  direction: rtl;
+  scroll-margin-top: 80px;
+}
+
+.program-youth-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.program-youth-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.program-youth-eyebrow {
+  display: inline-block;
+  background: rgba(111, 125, 69, 0.12);
+  color: #6F7D45;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  padding: 8px 20px;
+  border-radius: 30px;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+}
+
+.program-youth-title {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #3D3A2F;
+  margin: 0 0 16px 0;
+  line-height: 1.3;
+}
+
+.program-youth-subtitle {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #5C574A;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.program-youth-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-bottom: 50px;
+}
+
+.program-youth-card {
+  background: #FFFFFF;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(61, 58, 47, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.program-youth-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(61, 58, 47, 0.15);
+}
+
+.program-youth-card-image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.program-youth-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.program-youth-card:hover .program-youth-card-image img {
+  transform: scale(1.05);
+}
+
+.program-youth-card-content {
+  padding: 24px 22px 28px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.program-youth-card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #6F7D45;
+  margin: 0 0 12px 0;
+  line-height: 1.4;
+}
+
+.program-youth-card-text {
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: #5C574A;
+  margin: 0;
+}
+
+.program-youth-cta {
+  text-align: center;
+}
+
+.program-youth-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #C96E4B;
+  color: #FFFFFF;
+  font-size: 1.05rem;
+  font-weight: 700;
+  padding: 16px 36px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 14px rgba(201, 110, 75, 0.35);
+}
+
+.program-youth-button:hover {
+  background: #B55F3E;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(201, 110, 75, 0.45);
+}
+
+.program-youth-button:focus-visible {
+  outline: 3px solid #6F7D45;
+  outline-offset: 3px;
+}
+
+.program-youth-button-icon {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.program-youth-button:hover .program-youth-button-icon {
+  transform: translateX(-4px);
+}
+
+@media (max-width: 900px) {
+  .program-youth {
+    padding: 70px 16px;
+  }
+
+  .program-youth-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .program-youth-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .program-youth {
+    padding: 50px 14px;
+  }
+
+  .program-youth-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .program-youth-title {
+    font-size: 1.6rem;
+  }
+
+  .program-youth-subtitle {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .program-youth-card-content {
+    padding: 20px 18px 24px;
+  }
+
+  .program-youth-button {
+    width: 100%;
+    justify-content: center;
+    padding: 15px 28px;
+    font-size: 0.95rem;
+  }
+}
+
+.program-cards-section {
+  background: var(--bg-light, #F2E8DB);
+  padding: 48px 0;
+}
+
+.program-cards-section__container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+
+.program-cards-section__container .program-entry-card {
+  display: block;
+  text-decoration: none;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow-card, 0 2px 12px rgba(0,0,0,0.08));
+  transition: var(--transition-hover, all 0.3s ease);
+  position: relative;
+}
+
+.program-cards-section__container .program-entry-card__content {
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.program-cards-section__container .program-entry-card--elementary {
+  background: var(--primary, var(--primary-color, var(--primary, #6F7D45)));
+}
+
+.program-cards-section__container .program-entry-card--youth {
+  background: var(--secondary, var(--secondary-color, var(--secondary, #C96E4B)));
+}
+
+.program-cards-section__container .program-entry-card__ages {
+  display: inline-block;
+  background: rgba(255,255,255,0.22);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 999px;
+}
+
+.program-cards-section__container .program-entry-card__title {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.program-cards-section__container .program-entry-card__desc {
+  color: rgba(255,255,255,0.92);
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.program-cards-section__container .program-entry-card__cta {
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+@media (max-width: 768px) {
+.program-cards-section__container {
+  grid-template-columns: 1fr;
+}
+}
+/* zappy-self-heal */
+.program-cards-section__container { display: grid !important; }
+.program-cards-section__container { grid-template-columns: 1fr 1fr !important; }
+
+/* zappy-self-heal */
+html body .program-cards-section__container { display: grid !important; }
+
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
@@ -4778,7 +5335,7 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
 }
 
 
-/* ZAPPY_ANNOUNCEMENT_HEADER_OFFSET_CSS_V2 */
+/* ZAPPY_ANNOUNCEMENT_HEADER_OFFSET_CSS_V3 */
 :root {
   --zappy-header-stack-height: calc(var(--zappy-announcement-height, 40px) + var(--header-height, 72px));
 }
@@ -4787,15 +5344,7 @@ body:has(.zappy-announcement-bar) header.navbar,
 body:has(.zappy-announcement-bar) .navbar:not(.zappy-catalog-menu):not(.mobile-search-panel) {
   top: var(--zappy-announcement-height, 40px) !important;
 }
-/* First-paint: pull fullscreen heroes behind the fixed announcement+nav so a
-   transparent --nav-bg does not flash the cream body strip (live FOUC that
-   preview never showed because preview injects the same underlap eagerly). */
-body:has(.zappy-announcement-bar) section[data-hero-type^="fullscreen"],
-body:has(.zappy-announcement-bar) .index-hero-section,
-body:has(.zappy-announcement-bar) main > section[class*="hero"]:first-of-type {
-  margin-top: calc(-1 * var(--zappy-header-stack-height)) !important;
-  padding-top: calc(var(--zappy-header-stack-height)) !important;
-}
+
 
 
 /* ZAPPY_MOBILE_CATEGORIES_SUBMENU_CSS_V1 */
@@ -4843,6 +5392,206 @@ body:has(.zappy-announcement-bar) main > section[class*="hero"]:first-of-type {
 }
 
 
+/* ZAPPY_SHARE_BAR_LAYOUT_ENSURE_V3
+   Blog / article share bars: row layout, reading column, orange secondary chips. */
+
+/* Share bars must stay a horizontal chip row. AI cosmetic CSS and leaked
+   mobile rules historically set flex-direction:column globally and left
+   <br> clusters between the label and icons. */
+.social-share-bar,
+[class*="__share-bar"] {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  gap: 12px !important;
+}
+.social-share-bar > br,
+[class*="__share-bar"] > br {
+  display: none !important;
+}
+
+/* Constrain share / back / hero / title to the same column as body copy
+   (AI pages often only set max-width on __body). */
+[class*="blog-article-section"] > [class*="__share-bar"],
+[class*="blog-article-section"] > .social-share-bar,
+[class*="blog-article-section"] > [class*="__back-container"],
+[class*="blog-article-section"] > [class*="__hero-figure"],
+[class*="blog-article-section"] > [class*="__article-header"],
+[class*="blog-article-section"] > header:not(.site-header):not(.sim-header),
+[class*="blog-article-section"] [class*="__container"] > [class*="__share-bar"],
+[class*="blog-article-section"] [class*="__container"] > .social-share-bar,
+[class*="blog-article-section"] [class*="__container"] > [class*="__back-container"],
+[class*="blog-article-section"] [class*="__container"] > [class*="__hero-figure"],
+[class*="blog-article-section"] [class*="__container"] > [class*="__article-header"] {
+  max-width: 800px !important;
+  width: 100% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  box-sizing: border-box !important;
+}
+[class*="blog-article-section"] [class*="__hero-figure"] img,
+[class*="blog-article-section"] [class*="__hero-img"] {
+  max-width: 100% !important;
+}
+
+/* Unify blog share chips to orange secondary outline (jewish-life canonical).
+   Overrides brand-colored inline styles, btn-primary fills, and display:none
+   on LinkedIn/X that made article share bars look inconsistent. */
+[class*="blog-article-section"] .social-share-bar,
+[class*="blog-article-section"] [class*="__share-bar"] {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  gap: 14px !important;
+}
+[class*="blog-article-section"] .social-share-bar a,
+[class*="blog-article-section"] .social-share-bar button,
+[class*="blog-article-section"] [class*="__share-bar"] a,
+[class*="blog-article-section"] [class*="__share-bar"] button,
+[class*="blog-article-section"] .share-copy,
+[class*="blog-article-section"] .share-linkedin,
+[class*="blog-article-section"] .share-twitter,
+[class*="blog-article-section"] .share-facebook,
+[class*="blog-article-section"] .share-whatsapp,
+[class*="blog-article-section"] [class*="__share-btn"],
+[class*="blog-article-section"] [class*="__share-icon"],
+[class*="blog-article-section"] .share-btn,
+[class*="blog-article-section"] .share-icon {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 40px !important;
+  height: 40px !important;
+  min-width: 40px !important;
+  min-height: 40px !important;
+  border-radius: 50% !important;
+  background: transparent !important;
+  background-image: none !important;
+  border: 1.5px solid var(--secondary, #ff8a3d) !important;
+  color: var(--secondary, #ff8a3d) !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  text-decoration: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  box-shadow: none !important;
+  cursor: pointer !important;
+  outline: none !important;
+}
+[class*="blog-article-section"] .social-share-bar a svg,
+[class*="blog-article-section"] .social-share-bar button svg,
+[class*="blog-article-section"] [class*="__share-bar"] a svg,
+[class*="blog-article-section"] [class*="__share-bar"] button svg {
+  width: 18px !important;
+  height: 18px !important;
+  max-width: 18px !important;
+  max-height: 18px !important;
+  color: inherit !important;
+  fill: currentColor;
+  stroke: currentColor;
+}
+[class*="blog-article-section"] .social-share-bar__label,
+[class*="blog-article-section"] [class*="__share-label"],
+[class*="blog-article-section"] .share-label {
+  font-size: 0.95rem !important;
+  font-weight: 600 !important;
+  color: var(--text-dark, #1a1a1a) !important;
+  white-space: nowrap !important;
+}
+
+
+/* ZAPPY_MOBILE_MENU_FULL_BLEED_V1 */
+/* Upgrade legacy half-width (50%/300px) hamburger drawer → full-bleed overlay.
+   High-specificity selectors beat baked RTL "left:auto; right:0" pins
+   (html[lang=he] .nav-menu) and the generator's non-!important width:50%. */
+@media (max-width: 768px) {
+  html body .navbar .nav-menu,
+  html body nav.navbar .nav-menu,
+  html body .navbar #navMenu,
+  html body #navMenu,
+  html body .navbar .nav-menu.active,
+  html body nav.navbar .nav-menu.active,
+  html body .navbar #navMenu.active,
+  html body #navMenu.active,
+  html body .navbar .nav-menu.open,
+  html body #navMenu.open,
+  html[dir="rtl"] body .navbar .nav-menu,
+  html[dir="rtl"] body .navbar #navMenu,
+  html[dir="rtl"] body .navbar .nav-menu.active,
+  html[dir="rtl"] body .navbar #navMenu.active,
+  html[lang="he"] body .navbar .nav-menu,
+  html[lang="he"] body .navbar #navMenu,
+  html[lang="he"] body .navbar .nav-menu.active,
+  html[lang="he"] body .navbar #navMenu.active,
+  html[lang="ar"] body .navbar .nav-menu,
+  html[lang="ar"] body .navbar #navMenu,
+  html[lang="ar"] body .navbar .nav-menu.active,
+  html[lang="ar"] body .navbar #navMenu.active,
+  [dir="rtl"] .navbar .nav-menu,
+  [dir="rtl"] .navbar #navMenu,
+  [dir="rtl"] .navbar .nav-menu.active,
+  [dir="rtl"] .navbar #navMenu.active {
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    max-width: none !important;
+    box-sizing: border-box !important;
+    height: calc(100vh - 70px) !important;
+    height: calc(100dvh - var(--zappy-mobile-menu-top, var(--total-header-height, var(--zappy-navbar-bottom, 70px)))) !important;
+    max-height: calc(100dvh - var(--zappy-mobile-menu-top, var(--total-header-height, var(--zappy-navbar-bottom, 70px)))) !important;
+  }
+  html body .navbar .nav-menu > li > a,
+  html body nav.navbar .nav-menu > li > a,
+  html body .navbar #navMenu > li > a,
+  html body #navMenu > li > a {
+    padding: 16px 24px !important;
+    font-weight: 600 !important;
+    font-size: 1.15rem !important;
+    box-sizing: border-box !important;
+  }
+}
+/* END ZAPPY_MOBILE_MENU_FULL_BLEED */
+
+
+/* ZAPPY_MOBILE_MENU_GROUP_TITLE_V1 */
+/* Menu-group titles: match open-drawer link padding + beat scrolled frosted-text. */
+@media (max-width: 768px) {
+  html body .navbar .nav-menu.active > li > .menu-group-title,
+  html body nav.navbar .nav-menu.active > li > .menu-group-title,
+  html body .navbar #navMenu.active > li > .menu-group-title,
+  html body #navMenu.active > li > .menu-group-title,
+  html body .navbar .nav-menu.open > li > .menu-group-title,
+  html body #navMenu.open > li > .menu-group-title,
+  html body .navbar.scrolled .nav-menu.active > li > .menu-group-title,
+  html body .navbar.scrolled #navMenu.active > li > .menu-group-title,
+  html body .navbar.scrolled .nav-menu.open > li > .menu-group-title,
+  html body .navbar.scrolled #navMenu.open > li > .menu-group-title,
+  html body .navbar.scrolled .nav-menu.active > li.menu-group-item > .menu-group-title,
+  html body .navbar.scrolled #navMenu.active > li.menu-group-item > .menu-group-title {
+    display: flex !important;
+    align-items: center !important;
+    width: 100% !important;
+    max-width: none !important;
+    box-sizing: border-box !important;
+    padding: 12px 16px !important;
+    min-height: 44px !important;
+    line-height: 1.4 !important;
+    font-weight: 600 !important;
+    font-size: inherit !important;
+    color: var(--nav-text, var(--text-light, #fff7ed)) !important;
+  }
+  html body .navbar .nav-menu.active > li.menu-group-item,
+  html body .navbar #navMenu.active > li.menu-group-item,
+  html body .navbar .nav-menu.open > li.menu-group-item,
+  html body #navMenu.open > li.menu-group-item {
+    margin: 4px 0 !important;
+  }
+}
+/* END ZAPPY_MOBILE_MENU_GROUP_TITLE */
+
+
 /* zappy-nav-child-indent */
 .zappy-products-dropdown .zappy-nav-child > a,
 .sub-menu .zappy-nav-child > a {
@@ -4887,9 +5636,11 @@ nav .sub-menu.zappy-empty-submenu,
 }
 
 
-/* ========== RTL MOBILE NAVBAR FIX (zappy-rtl-mobile-fix) ========== */
+/* ========== RTL MOBILE NAVBAR FIX (zappy-rtl-mobile-fix-v2) ========== */
 /* High-specificity rules to ensure RTL positioning wins over any [lang="en"] conflicts */
 /* For RTL sites: hamburger on RIGHT, phone on LEFT (mirror of LTR layout) */
+/* Mobile menu panel is FULL-BLEED (left+right:0) — V1's left:auto pin was for
+   the retired half-width drawer and must not return. */
 /* NOTE: Includes both html[dir="rtl"] AND [dir="rtl"] selectors as fallback */
 /* because some pages may be wrapped with <html lang="en"> (missing dir="rtl" on html) */
 /* but still have dir="rtl" on <body> or other ancestor elements */
@@ -4930,7 +5681,7 @@ nav .sub-menu.zappy-empty-submenu,
     right: auto !important;
   }
   
-  /* RTL Mobile Menu - slides from RIGHT */
+  /* RTL Mobile Menu panel — full-bleed (matches current overlay generator) */
   html[dir="rtl"] .navbar .nav-menu,
   html[dir="rtl"] nav .nav-menu,
   html[dir="rtl"] header .nav-menu,
@@ -4943,8 +5694,10 @@ nav .sub-menu.zappy-empty-submenu,
   [dir="rtl"] .nav-menu,
   html[lang="he"] .nav-menu,
   html[lang="ar"] .nav-menu {
-    left: auto !important;
+    left: 0 !important;
     right: 0 !important;
+    width: 100% !important;
+    max-width: none !important;
   }
   
   /* RTL Mobile Menu Links - text align right */
@@ -5169,7 +5922,9 @@ nav .sub-menu.zappy-empty-submenu,
   
   /* AI-generated section grids with common naming patterns */
   /* These often have fixed pixel column widths that don't adapt to mobile */
-  [class*="-grid"]:not([data-zappy-auto-grid]):not(.zappy-preserve-css-grid):not([data-zappy-explicit-columns="true"]) {
+  /* Exclude .zappy-qv-book-cal-grid — the booking date picker must stay 7-col
+     on mobile (Quick View + PDP). Class name matches [class*="-grid"]. */
+  [class*="-grid"]:not([data-zappy-auto-grid]):not(.zappy-preserve-css-grid):not([data-zappy-explicit-columns="true"]):not(.zappy-qv-book-cal-grid) {
     grid-template-columns: 1fr !important;
   }
   
@@ -5750,6 +6505,7 @@ html[dir="ltr"] .service-detail.service-reverse .service-detail-content { order:
 /* ZAPPY_MOBILE_NAV_ICON_ALIGNMENT_FIX */
 /* ZAPPY_MOBILE_NAV_ICON_ALIGNMENT_FIX_V3 */
 /* ZAPPY_MOBILE_NAV_ICON_ALIGNMENT_FIX_V4 */
+/* ZAPPY_MOBILE_NAV_ICON_ALIGNMENT_FIX_V5 */
 /* The mobile hamburger / phone buttons are absolutely positioned. Keep the
    navbar itself as a non-collapsing containing block so auto-margin centering
    stays aligned even when generated mobile CSS moves every nav child out of flow. */
@@ -5757,6 +6513,67 @@ html[dir="ltr"] .service-detail.service-reverse .service-detail-content { order:
   .navbar,
   nav.navbar {
     min-height: 70px !important;
+  }
+
+  /* V5: Desktop .nav-search-box must stay hidden on mobile. AI/customization CSS
+     often force-shows it with higher specificity than the generator's plain
+     .nav-search-box { display:none } (e.g. .navbar .nav-ecommerce-icons.nav-icons-left
+     .nav-search-box { display:flex; background: cream }), which paints an empty
+     cream/white square left of the cart on RTL ecommerce navs. Beat that chain. */
+  html body .navbar .nav-search-box,
+  html body nav.navbar .nav-search-box,
+  html body .navbar .nav-ecommerce-icons .nav-search-box,
+  html body .navbar .nav-ecommerce-icons.nav-icons-left .nav-search-box,
+  html body .navbar .nav-container .nav-ecommerce-icons.nav-icons-left .nav-search-box {
+    display: none !important;
+    visibility: hidden !important;
+    width: 0 !important;
+    height: 0 !important;
+    min-width: 0 !important;
+    max-width: 0 !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+    background: transparent !important;
+    pointer-events: none !important;
+  }
+
+  /* V5: Search-toggle SVG is frequently recolored to --nav-text (cream/white) by
+     AI customization at .navbar .nav-container .nav-ecommerce-icons.nav-icons-right
+     .nav-search-toggle svg, while the pill button itself keeps the correct
+     contrasting color from the luminance-aware pill rules. Inherit that color
+     with a selector that out-ranks the nav-text stroke paint so the icon stays
+     legible on light AND dark pills (no hardcoded text-dark). */
+  html body .navbar .nav-container .nav-ecommerce-icons.nav-icons-right .nav-search-toggle svg,
+  html body .navbar .nav-container .nav-ecommerce-icons.nav-icons-right .nav-search-toggle svg *,
+  html body .navbar .nav-ecommerce-icons.nav-icons-right .nav-search-toggle svg,
+  html body .navbar .nav-ecommerce-icons.nav-icons-right .nav-search-toggle svg * {
+    color: inherit !important;
+    stroke: currentColor !important;
+    fill: none !important;
+  }
+
+  /* V5: Keep the three mobile icon couples on one baseline — absolute groups +
+     hamburger all center against the same navbar box. */
+  html body .navbar .nav-ecommerce-icons.nav-icons-left,
+  html body .navbar .nav-ecommerce-icons.nav-icons-right,
+  html body .navbar .nav-icons-left,
+  html body .navbar .nav-icons-right {
+    top: 50% !important;
+    bottom: auto !important;
+    transform: translateY(-50%) !important;
+    align-items: center !important;
+  }
+  html body .navbar .nav-ecommerce-icons.nav-icons-right .nav-search-toggle,
+  html body .navbar .nav-search-toggle {
+    width: 36px !important;
+    height: 36px !important;
+    min-width: 36px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border-radius: 9999px !important;
+    align-self: center !important;
   }
 
   /* E-commerce mobile navbar icon-group alignment.
